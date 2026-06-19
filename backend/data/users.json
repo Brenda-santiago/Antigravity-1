@@ -42,5 +42,16 @@
     "resetToken": null,
     "resetTokenExpiry": null,
     "createdAt": "2026-06-18T01:04:31.558Z"
+  },
+  {
+    "id": "8f83734a-4913-4d44-84f3-d5b864be6db9",
+    "name": "carla montes",
+    "email": "cm@gmail.com",
+    "password": "$2a$12$O2QE1NDbpYMsIu4kzaFvv.cygr8csjctByJcP4OiVRLrG904GA0qa",
+    "verified": true,
+    "verificationToken": null,
+    "resetToken": null,
+    "resetTokenExpiry": null,
+    "createdAt": "2026-06-19T22:06:08.728Z"
   }
 ]

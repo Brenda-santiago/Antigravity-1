@@ -1,58 +1,275 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Iniciar Sesión — AuthFlow</title>
-  <meta name="description" content="Accede a tu cuenta AuthFlow de forma segura." />
+  <title>Hotel Club Penguin </title>
+  <meta name="description"
+    content="Bienvenido a tu aventura en el mejor hotel con temática de Club Penguin. ¡Reserva hoy!" />
+  <!-- Fuentes estilo Club Penguin -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
-  <div class="page-wrapper">
-    <div class="card">
 
-      <!-- Brand -->
-      <div class="brand">
-        <div class="brand-logo">
-          <span class="brand-main">Auth</span><span class="brand-accent">Flow</span>
+<body class="hotel-page">
+
+  <!-- ==========================================
+       PÁGINA PRINCIPAL DEL HOTEL
+       ========================================== -->
+  <div class="game-container">
+
+    <!-- Top Header Bar (Logo & Auth Buttons) -->
+    <header class="top-header">
+      <div class="brand-container">
+        <div class="hotel-logo">
+          <div class="logo-circle">
+            <!-- Icono o ilustración de pingüino en círculo azul -->
+            <img src="img/penguin_mascot.png" alt="Mascota Pingüino" class="logo-penguin-img" />
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">HOTEL PENGUIN</span>
+            <span class="logo-subtitle">PARADISE</span>
+            <div class="stars">⭐⭐⭐⭐</div>
+          </div>
         </div>
-        <div class="brand-subtitle">Sistema de autenticación seguro</div>
       </div>
 
-      <h1 class="card-title">Iniciar Sesión</h1>
-      <p class="card-description">Introduce tus credenciales para acceder</p>
+      <!-- Menú de Navegación del Juego -->
+      <nav class="game-nav">
+        <ul>
+          <li><a href="#" class="nav-btn active"><span class="btn-icon">🏠</span> INICIO</a></li>
+          <li><a href="#habitaciones" class="nav-btn"><span class="btn-icon">🛎️</span> HABITACIONES</a></li>
+          <li><a href="#" class="nav-btn open-login-btn"><span class="btn-icon">📅</span> RESERVAS</a></li>
+          <li><a href="#servicios" class="nav-btn"><span class="btn-icon">🐧</span> SERVICIOS</a></li>
+          <li><a href="#eventos" class="nav-btn"><span class="btn-icon">🥳</span> EVENTOS</a></li>
+          <li><a href="#contacto" class="nav-btn"><span class="btn-icon">💬</span> CONTACTO</a></li>
+        </ul>
+      </nav>
 
-      <!-- Alert container -->
+      <div class="auth-buttons">
+        <button class="header-btn btn-login open-login-btn">
+          <span class="user-icon">👤</span> INICIAR SESIÓN
+        </button>
+        <a href="register.html" class="header-btn btn-register">
+          <span class="register-icon">👤➕</span> REGISTRARSE
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Hero Area -->
+    <main class="hero-area">
+      <!-- Welcome Panel -->
+      <div class="welcome-panel">
+        <h1 class="welcome-title">¡BIENVENIDO A TU AVENTURA EN EL MEJOR HOTEL!</h1>
+        <p class="welcome-desc">Disfruta de unas vacaciones increíbles llenas de diversión y comodidad en el hotel más
+          helado de la isla.</p>
+
+        <div class="welcome-actions">
+          <button class="hero-action-btn btn-reserve-now open-login-btn">
+            <span class="icon">🔔</span> RESERVAR AHORA
+          </button>
+          <button class="hero-action-btn btn-promotions">
+            <span class="icon">🎁</span> VER PROMOCIONES
+          </button>
+        </div>
+      </div>
+
+      <!-- Mascot & Pool Scene (Middle/Left Decor) -->
+      <div class="pool-scene">
+        <!-- Pingüino verde con auriculares -->
+        <div class="penguin-green-decor">
+          <div class="penguin-bubble">¡Sube el volumen a la diversión! 🎧</div>
+          <span class="penguin-emoji">🐧💚</span>
+        </div>
+
+        <!-- Piscina central -->
+        <div class="pool-water">
+          <div class="penguin-pool-1">🕶️🐧🍹</div>
+          <div class="penguin-pool-2">🐧💜🧣</div>
+        </div>
+      </div>
+
+      <!-- Hotel Building and Buttons Mascot (Right Decor) -->
+      <div class="hotel-building-decor">
+        <!-- Cartelera flotante de bienvenida a la derecha -->
+        <div class="welcome-bubble-box open-login-btn">
+          <div class="p-avatar">🐧💜</div>
+          <div class="p-text">
+            <strong>¡Hola, Pingüino!</strong>
+            <span>Inicia sesión para ver tus reservas y puntos.</span>
+          </div>
+        </div>
+
+        <!-- Flechas de Madera del Hotel -->
+        <div class="wood-signposts">
+          <a href="#recepcion" class="wood-sign sign-recepcion">
+            <span class="sign-icon">🛎️</span> RECEPCIÓN
+          </a>
+          <a href="#restaurante" class="wood-sign sign-restaurante">
+            <span class="sign-icon">🍴</span> RESTAURANTE
+          </a>
+          <a href="#piscina" class="wood-sign sign-piscina">
+            <span class="sign-icon">🌊</span> PISCINA
+          </a>
+          <a href="#juegos" class="wood-sign sign-juegos">
+            <span class="sign-icon">🎮</span> SALA DE JUEGOS
+          </a>
+          <a href="#spa" class="wood-sign sign-spa">
+            <span class="sign-icon">🪷</span> SPA
+          </a>
+        </div>
+
+        <!-- Cartel del Evento Especial -->
+        <div class="special-event-card">
+          <div class="event-header">EVENTO ESPECIAL</div>
+          <div class="event-title">FIESTA PINGÜINA</div>
+          <div class="event-footer">¡Este sábado! 🎉</div>
+          <div class="puffle-blue">🔵</div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bottom Navigation Badges -->
+    <section class="bottom-badges-section">
+      <div class="badge-card card-blue" id="tab-habitaciones">
+        <div class="badge-icon">🛏️</div>
+        <div class="badge-info">
+          <h3>HABITACIONES</h3>
+          <p>Cómodas y acogedoras</p>
+        </div>
+      </div>
+      <div class="badge-card card-green" id="tab-restaurante">
+        <div class="badge-icon">🛎️</div>
+        <div class="badge-info">
+          <h3>RESTAURANTE</h3>
+          <p>Deliciosos platillos</p>
+        </div>
+      </div>
+      <div class="badge-card card-purple" id="tab-juegos">
+        <div class="badge-icon">🎮</div>
+        <div class="badge-info">
+          <h3>SALA DE JUEGOS</h3>
+          <p>Diversión sin límites</p>
+        </div>
+      </div>
+      <div class="badge-card card-cyan" id="tab-spa">
+        <div class="badge-icon">🌸</div>
+        <div class="badge-info">
+          <h3>SPA</h3>
+          <p>Relájate y disfruta</p>
+        </div>
+      </div>
+      <div class="badge-card card-pink" id="tab-promos">
+        <div class="badge-icon">🎁</div>
+        <div class="badge-info">
+          <h3>PROMOCIONES</h3>
+          <p>Ofertas exclusivas</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Habitaciones Reales / Detalles -->
+    <section class="rooms-gallery" id="habitaciones">
+      <div class="gallery-header">
+        <h2>HABITACIONES DEL RESORT</h2>
+        <p>Vive la experiencia real del confort polar en nuestras suites de lujo combinadas con la magia del juego</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="img/habitacion_hotel_1.png" alt="Suite Alpina Real" class="room-real-img" />
+          <div class="room-overlay">
+            <h3>Suite Iglú Deluxe</h3>
+            <p>Vistas panorámicas a la montaña nevada con chimenea rústica real.</p>
+            <div class="room-footer-row">
+              <span class="room-tag">300 Monedas / Noche</span>
+              <button class="room-reserve-btn open-login-btn">Reservar Cuarto 🛎️</button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/habitacion_hotel_2.png" alt="Suite Polar Suite" class="room-real-img" />
+          <div class="room-overlay">
+            <h3>Cabaña Ventisca Superior</h3>
+            <p>Arquitectura de troncos de madera con acabados premium y jacuzzi polar.</p>
+            <div class="room-footer-row">
+              <span class="room-tag">450 Monedas / Noche</span>
+              <button class="room-reserve-btn open-login-btn">Reservar Cuarto 🛎️</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Footer Bar -->
+    <footer class="bottom-footer">
+      <div class="footer-left">
+        <div class="footer-stat stat-coins">
+          <span class="stat-icon">🪙</span>
+          <div class="stat-text">
+            <span class="stat-val">1250</span>
+            <span class="stat-label">MONEDAS</span>
+          </div>
+        </div>
+        <div class="footer-stat stat-badges">
+          <span class="stat-icon">🎖️</span>
+          <div class="stat-text">
+            <span class="stat-val">12</span>
+            <span class="stat-label">INSIGNIAS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-center">
+        <div class="social-links">
+          <a href="#" class="social-circle sc-insta">📸</a>
+          <a href="#" class="social-circle sc-tiktok">🎵</a>
+          <a href="#" class="social-circle sc-yt">🎥</a>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <span class="copyright">© 2025 Hotel Penguin Paradise. Todos los derechos reservados.</span>
+        <span class="footer-penguin-icon">🐧</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ==========================================
+       MODAL DE INICIAR SESIÓN (CLUB PENGUIN THEME)
+       ========================================== -->
+  <div class="login-modal-overlay" id="login-modal">
+    <div class="login-modal-box">
+      <button class="close-modal-btn" id="close-login-btn">×</button>
+
+      <!-- Brand/Logo inside modal -->
+      <div class="modal-brand">
+        <div class="modal-logo-icon">🐧</div>
+        <h2 class="modal-brand-name">HOTEL PENGUIN</h2>
+        <span class="modal-brand-sub">INICIAR SESIÓN</span>
+      </div>
+
+      <p class="modal-desc">Ingresa tus credenciales para reservar tu cuarto iglú</p>
+
+      <!-- Alert box para mensajes del script login.js -->
       <div id="alert-box"></div>
 
-      <!-- Form -->
+      <!-- Formulario oficial (compatible con login.js) -->
       <form id="login-form" novalidate autocomplete="on">
 
         <div class="form-group">
           <label class="form-label" for="email">Correo Electrónico</label>
-          <input
-            class="form-input"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="ejemplo@correo.com"
-            autocomplete="email"
-            required
-          />
+          <input class="form-input" type="email" id="email" name="email" placeholder="ejemplo@correo.com"
+            autocomplete="email" required />
         </div>
 
         <div class="form-group">
           <label class="form-label" for="password">Contraseña</label>
           <div class="input-wrapper">
-            <input
-              class="form-input"
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Tu contraseña"
-              autocomplete="current-password"
-              required
-            />
+            <input class="form-input" type="password" id="password" name="password" placeholder="Tu contraseña"
+              autocomplete="current-password" required />
             <button type="button" class="toggle-password" id="toggle-pass" aria-label="Mostrar/ocultar contraseña">
               👁
             </button>
@@ -63,19 +280,44 @@
           <a href="forgot.html">¿Olvidaste tu usuario o contraseña?</a>
         </div>
 
-        <button type="submit" class="btn btn-primary" id="submit-btn">
-          Entrar
+        <button type="submit" class="btn-submit-game" id="submit-btn">
+          ENTRAR AL HOTEL
         </button>
 
       </form>
 
       <div class="form-footer">
-        ¿No tienes cuenta? <a href="register.html">Regístrate</a>
+        ¿No tienes cuenta? <a href="register.html">Regístrate aquí</a>
       </div>
-
     </div>
   </div>
 
+  <!-- Script para la interacción del modal y login.js -->
+  <script>
+    // Lógica para abrir/cerrar el modal
+    const loginModal = document.getElementById('login-modal');
+    const openBtns = document.querySelectorAll('.open-login-btn');
+    const closeBtn = document.getElementById('close-login-btn');
+
+    openBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        loginModal.classList.add('active');
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      loginModal.classList.remove('active');
+    });
+
+    // Cerrar al hacer clic fuera de la caja
+    loginModal.addEventListener('click', (e) => {
+      if (e.target === loginModal) {
+        loginModal.classList.remove('active');
+      }
+    });
+  </script>
   <script src="js/login.js"></script>
 </body>
+
 </html>

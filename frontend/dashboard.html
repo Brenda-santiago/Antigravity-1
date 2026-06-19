@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Panel Principal — AuthFlow</title>
-  <meta name="description" content="Panel de control de tu cuenta AuthFlow." />
+  <title>Mi Iglú — Hotel Club Penguin</title>
+  <meta name="description" content="Panel de control de tu cuenta en el Hotel Club Penguin." />
+  <!-- Google Fonts para estilo Club Penguin -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body class="dashboard-body" style="display:block; align-items:unset;">
+
+<body class="dashboard-body">
 
   <!-- Navbar -->
   <nav class="db-nav">
     <div class="db-brand">
-      Auth<span class="brand-accent">Flow</span>
+      Club<span class="brand-accent"> Penguin Hotel</span>
     </div>
     <div class="db-nav-right">
       <div class="db-user-badge">
-        <div class="avatar" id="nav-avatar">?</div>
+        <div class="avatar" id="nav-avatar">🐧</div>
         <span class="name-text" id="nav-name">Cargando...</span>
       </div>
-      <button class="btn-logout" id="logout-btn">Cerrar Sesión</button>
+      <button class="btn-logout" id="logout-btn">Cerrar Sesión 🚪</button>
     </div>
   </nav>
 
@@ -28,8 +32,8 @@
 
     <!-- Welcome -->
     <div class="db-welcome">
-      <h1>Bienvenido, <span id="welcome-name">...</span> 👋</h1>
-      <p id="welcome-email">Sesión iniciada correctamente</p>
+      <h1>¡Bienvenido a tu Iglú, <span id="welcome-name">...</span>! 🏠</h1>
+      <p id="welcome-email">¡Tu aventura en el Hotel Club Penguin continúa!</p>
     </div>
 
     <!-- Stats Grid -->
@@ -103,4 +107,5 @@
 
   <script src="js/dashboard.js"></script>
 </body>
+
 </html>

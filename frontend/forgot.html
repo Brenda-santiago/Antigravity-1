@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recuperar Acceso — AuthFlow</title>
-  <meta name="description" content="Recupera tu usuario o contraseña de AuthFlow." />
+  <title>Recuperar Acceso — Hotel Club Penguin </title>
+  <meta name="description" content="Recupera tu usuario o contraseña del Hotel Penguin Paradise." />
+  <!-- Google Fonts para estilo Club Penguin -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
+
+<body class="game-auth-body">
   <div class="page-wrapper">
     <div class="card">
 
       <!-- Brand -->
       <div class="brand">
         <div class="brand-logo">
-          <span class="brand-main">Auth</span><span class="brand-accent">Flow</span>
+          <span class="brand-main">Hotel</span> <span class="brand-accent">Penguin</span>
         </div>
         <div class="brand-subtitle">Recuperación de acceso</div>
       </div>
 
       <h1 class="card-title">¿Qué olvidaste?</h1>
-      <p class="card-description">Selecciona qué necesitas recuperar</p>
+      <p class="card-description">Selecciona qué necesitas recuperar para tu pingüino</p>
 
       <!-- Alert container -->
       <div id="alert-box"></div>
@@ -52,15 +57,8 @@
 
         <div class="form-group">
           <label class="form-label" for="email">Correo Electrónico registrado</label>
-          <input
-            class="form-input"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="ejemplo@correo.com"
-            autocomplete="email"
-            required
-          />
+          <input class="form-input" type="email" id="email" name="email" placeholder="ejemplo@correo.com"
+            autocomplete="email" required />
         </div>
 
         <button type="submit" class="btn btn-primary" id="submit-btn">
@@ -78,4 +76,5 @@
 
   <script src="js/forgot.js"></script>
 </body>
+
 </html>
